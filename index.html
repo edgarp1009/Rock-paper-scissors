@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper and scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="main-container hidden">
+        <figure class="main-logo"><img src="./assets/logo.png" alt="logo"></figure>
+        
+        <section class="start-game">
+            <figure id="big"><img src="./assets/difficulty3.png" alt="difficulty"></figure>
+            <section class="difficulty-choice">
+                <figure class="button classic"><img src="./assets/Classic.png" alt="classic"></figure>
+                <figure class="button sheldon"><img src="./assets/Sheldon.png" alt="sheldon"></figure>
+            </section>
+            <figure id="big" class="button start hidden"><img src="./assets/Start.png" alt="start"></figure>
+        </section>
+
+        <section class="playing hidden">
+
+            <section class="score">
+                <h1 class="score1"></h1>
+                <h1 class="score2"></h1>
+            </section>
+            
+            <section class="player1">
+                <figure class="playerChoice button rock1"><img src="./assets/rock.png" alt="Rock"></figure>
+                <figure class="playerChoice button paper1"><img src="./assets/paper.png" alt="paper"></figure>
+                <figure class="playerChoice button scissors1"><img src="./assets/scissors.png" alt="scissors"></figure>
+                <!-- <figure class="playerChoice button hidden lizard1"><img src="./assets/lizard.png" alt="lizard"></figure>
+                <figure class="playerChoice button hidden spock1"><img src="./assets/spuck.png" alt="spock"></figure> -->
+            </section>
+
+            <section class="player2">  
+                <figure class="choice hidden rock2"><img src="./assets/rock.png" alt="Rock"></figure>
+                <figure class="choice paper2 hidden"><img src="./assets/paper.png" alt="paper"></figure>
+                <figure class="choice hidden scissors2"><img src="./assets/scissors.png" alt="scissors"></figure>
+                <figure class="choice hidden lizard2"><img src="./assets/lizard.png" alt="lizard"></figure>
+                <figure class="choice hidden spock2"><img src="./assets/spuck.png" alt="spock"></figure>
+                <figure class="interrogation"><img src="./assets/interrogation.png" alt="spock"></figure>
+            </section>
+        </section>
+
+        <section class="results hidden">
+            <img class="happy hidden" src="./assets/happy.png" alt="">
+            <img class="sad hidden" src="./assets/bazinga.png" alt="">
+            <img id="final" class="you-win hidden" src="./assets/you-win.png" alt="">
+            <img id="final" class="you-lose hidden" src="./assets/you-lose.png" alt="">
+        </section>
+
+
+        <section class="blocker hidden"></section>
+
+    </main>
+    <section class="loader-container">
+        <figure class="loader-logo"><img src="./assets/logo.png" alt="logo"></figure>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
