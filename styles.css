@@ -40,6 +40,8 @@ body {
     .start-game {
         padding-top: 20px;
         width: 100%;
+        max-width: 525px;
+        margin: 0 auto;
 
         display: flex;
         flex-direction: column;
@@ -105,7 +107,7 @@ body {
             bottom: 50px;
             display: flex;
             justify-content: center;
-            gap: 20%;
+            gap: 15%;
             
             h1 {
                 font-size: 2.3rem;
@@ -143,12 +145,14 @@ body {
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
     opacity: 0;
 }
 
 .results {
     position: absolute;
     top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     height: 100%;
@@ -156,8 +160,10 @@ body {
 
     img {
         width: 50%;
+        max-width: 270px;
         object-fit: contain;
         animation: results 1.5s ease-in-out;
+        
     }
 
     #final {
